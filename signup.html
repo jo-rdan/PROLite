@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <nav class="navbar">
+            <span class="svg">
+                    <a href="#"><img src="./img/svg.png" alt="" onclick="openSlideMenu()"></a>
+            </span> 
+            <div class="logo-img"><img src="./img/Logo.png" alt="" class="lgo"></div>
+            <ul class="navbar-nav">
+                <li class="home"><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#" class="register">Register</a></li>
+                <li><a href="#" class="login">Login</a></li>
+            </ul>  
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <div class="logo-img"><img src="./img/Logo.png" alt="" class="logo-show"></div>
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Properties</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Login</`a>
+    </div>
+    <div class="container" id="main">
+        <div class="form">
+            <img src="./img/avatarsignup.png" alt="" class="avatar">
+            <h2>Sign Up</h2>
+            <form action=""></form>
+                <input type="text" name="" id="first" required placeholder="first name">
+                <br><input type="text" name="" id="last" required placeholder="last name">
+                <br><input type="text" name="" id="address" required placeholder="address">
+                <br><input type="text" name="" id="email" required placeholder="email">
+                <br><input type="password" name="" id="passwd" required placeholder="password">
+                <br><button class="button"><a href="#">Sign Up</a></button>
+                <a href="./signin.html" class="links">I have an account!</a><br>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>Copyright &copy; Property PRO Lite 2019</p>
+        </footer>
+    </div>
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width='250px';
+            document.getElementById('main').style.marginLeft='100px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width='0';
+            document.getElementById('main').style.marginLeft='0';
+        }
+    </script>
+</body>
+</html>
