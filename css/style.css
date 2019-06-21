@@ -1,7 +1,6 @@
 body{
     margin:0;
     font-family: 'Roboto Slab',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-
 }
 /* Nav section starts here */
 .navbar{
@@ -374,6 +373,16 @@ footer img,ul{
         .property{
             display:grid;
             grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+@media (max-width:380px){
+    footer ul{
+        padding: 0;
+    }
+    @media (max-width:340px) {
+        footer ul li{
+            display: block;
         }
     }
 }
